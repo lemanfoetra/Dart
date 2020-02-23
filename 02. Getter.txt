@@ -1,0 +1,21 @@
+class Test {
+  
+  var nilaiPertama ;
+  var nilaiKedua;
+  
+  Test({this.nilaiPertama, this.nilaiKedua});
+  
+  // Getter di Dart Tidak Memakai Parameter
+  int get totalNilaiJumlah {          
+    return nilaiPertama + nilaiKedua;
+  }
+}
+
+
+void main() {
+  
+  Test test = Test(nilaiPertama: 10, nilaiKedua: 20);
+  int result = test.totalNilaiJumlah;       // Menginisiasinya pun sama seperti inisiasi variable
+  
+  print(result);
+}
