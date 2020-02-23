@@ -1,0 +1,31 @@
+
+void main()
+{
+  
+  
+  var question = [
+    {
+      'questionText': 'Apa Warna Favoritmu ?',
+      'answers': [
+        {'text': 'Hitam', 'nilai': 0},
+        {'text': 'Merah', 'nilai': 1},
+        {'text': 'Hijau', 'nilai': 2}
+      ]
+    },
+    {
+      'questionText': 'Hitung hasil dari 2 + 5 * 2 = ?',
+      'answers': [
+        {'text': '7', 'nilai': 0},
+        {'text': '9', 'nilai': 0},
+        {'text': '12', 'nilai': 2}
+      ]
+    },
+  ];
+  
+  var result = (question[0]['answers'] as List<Map<String, Object>>).map((hasil){
+    return hasil['text'];
+  }).toList();
+  
+  print (result);
+  
+}
