@@ -1,0 +1,46 @@
+
+
+main() {
+  
+  var myFuture = Future((){
+    return "Hallo";
+  });
+  
+  
+  print('..1');
+  myFuture.then((result){
+    print(result);
+  });
+  print('..2');
+  
+  
+  
+  Future((){
+    return "Hallo";
+  }).then((result){
+    return result+" Wordl";
+  }).then((result){
+    print(result);
+  });
+  
+  
+  
+  
+  Future((){
+    
+    return "Hallo";
+    
+  }).catchError((){ 
+    
+    print(".. atkif ketika error");
+    
+  }).then((result){
+    
+    return result+" Wordl";
+    
+  }).then((result){
+    
+    print(result);
+  });
+  
+}
