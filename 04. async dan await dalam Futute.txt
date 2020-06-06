@@ -1,0 +1,37 @@
+
+
+main() async{
+  
+  print('mulai');
+  await angka();
+  print('selesai');
+  
+}
+
+
+Future<void> angka() async {
+  print('1');
+  print('2');
+  print('3');
+}
+
+// HASIL
+mulai
+1
+2
+3
+selesai
+
+
+
+// NOTE : 
+// setelah mulai,angka() tidak akan dilewati dia akan terus diproses dan ditunggu selama apapun waktunya sampe beres lalu print('selesai') dieksekusi.
+
+
+
+
+http://www.udacoding.com/mengenal-stream-async-yield-dan-yield-pada-flutter/
+
+https://daengweb.id/belajar-flutter-basic-5-http-request
+
+https://daengweb.id/belajar-flutter-basic-8-state-management-http-request
